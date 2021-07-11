@@ -21,7 +21,7 @@
 1. 打開你的 terminal，Clone 此專案至本機電腦
 
 ```
-git clone https://github.com/RunChenn/restaurant_list_crud.git;
+git clone https://github.com/RunChenn/restaurant_list_curd.git
 ```
 
 2. 進入至專案資料夾
