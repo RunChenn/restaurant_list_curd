@@ -6,8 +6,8 @@ const sortData = require('../../public/javascripts/sortData');
 router.get('/', (req, res) => {
     const selected = req.query.sortSelect;
     const sortDb = {
-        nameEnAsc:  { name_en: 'asc' },
-        nameEnDesc: { name_en: 'desc' },
+        nameAsc:  { name_en: 'asc' },
+        nameDesc: { name_en: 'desc' },
         category:   { category: 'asc' },
         location:   { location: 'asc' }
     };

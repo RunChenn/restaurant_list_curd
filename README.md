@@ -3,7 +3,8 @@
 
 ## Features - 產品功能
 - 首頁可以瀏覽所有餐廳與它們的簡單資料
-- 依照 "餐廳名稱" 及 "餐廳類別" 搜尋
+- 依照 餐廳名稱及類別 搜尋
+- 依照 餐廳名稱、類別及地區 排序
 - 檢視餐廳詳細資訊
 - 使用者可以新增一家餐廳
 - 使用者可以修改一家餐廳的資訊
@@ -58,4 +59,3 @@ Express is listening on localhost: 3000.
 
 ## Developer
 [Run Chen](https://github.com/RunChenn)# restaurant_list_crud
-# restaurant_list_curd
