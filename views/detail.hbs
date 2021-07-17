@@ -1,14 +1,23 @@
 
-<h1 class="mb-1 restaurant-show-title">
+{{!-- <h1 class="mb-1 restaurant-show-title">
   {{ restaurant.name }}
   <span class="badge badge-pill badge-danger font-weight-normal">
     {{ restaurant.rating }}
     <i class="fas fa-star fa-xs"></i>
   </span>
-</h1>
+</h1> --}}
 <div class="container">
   <div class="row">
     <div class="col-12 col-md-10 mx-auto">
+      <div class="row">
+        <h1 class="mb-1 restaurant-show-title mx-auto text-primary">
+          {{ restaurant.name }}
+          {{!-- <span class="badge badge-pill badge-danger font-weight-normal">
+            {{ restaurant.rating }}
+            <i class="fas fa-star fa-xs"></i>
+          </span> --}}
+        </h1>
+      </div>
       <div class="row justify-content-between">
         <div class="col-auto mb-4">
           <a class="btn btn-warning" href="/" role="button">
@@ -24,16 +33,18 @@
           </button>
         </div>
       </div>
-      <p class="mb-1">
-        <span class="text-secondary">
-          <i class="fas fa-utensils pr-2"></i>
-          類別：
+      <h6 class="mb-1">
+        <span class="badge badge-pill badge-info font-weight-normal">
+          <i class="fas fa-utensils pr-2"></i> {{ restaurant.category }}
         </span>
-        {{ restaurant.category }}
-      </p>
+        <span class="badge badge-pill badge-warning font-weight-normal">
+          {{ restaurant.rating }}
+          <i class="fas fa-star fa-xs"></i>
+        </span>
+      </h6>
 
-      <p class="mb-1">
-        <span class="text-secondary">
+      <p class="mt-2 mb-1">
+        <span class="text-dark">
           <i class="fas fa-map-marker-alt pr-2"></i>
           地址：
         </span>
@@ -44,7 +55,7 @@
       </p>
 
       <p class="mb-1">
-        <span class="text-secondary">
+        <span class="text-dark">
           <i class="fas fa-mobile-alt pr-2"></i>
           電話：
         </span>

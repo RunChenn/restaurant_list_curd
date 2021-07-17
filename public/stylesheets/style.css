@@ -1,3 +1,4 @@
+
 header {
   overflow: hidden;
 }
@@ -20,6 +21,14 @@ header {
   filter: blur(3px);
 }
 
+.form-control {
+  border: 1px solid rgb(0 0 0 / 28%);
+}
+
+.searchInput {
+  border: 1px solid rgb(241 173 78);
+}
+
 .search-bar .search-bar-outer {
   margin: 0 auto;
   margin-top: -60px;
@@ -33,6 +42,11 @@ header {
 
 .search-bar .search-bar-inner h4 {
   color: #9b4b4b;
+}
+
+#search-button {
+  border-top-right-radius: .25rem;
+  border-bottom-right-radius: .25rem;
 }
 
 .form-control::placeholder {
@@ -71,11 +85,15 @@ header {
 
 .restaurant-show-title {
   position: relative;
-  top: -100px;
-  color: white;
+  display: inline-block;
   text-align: center;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-weight: 700;
   font-size: 3rem;
+  line-height: 1.2;
+}
+
+.sortMain {
+  display: inline-block;
 }
 
 @media screen and (max-width: 992px) {
