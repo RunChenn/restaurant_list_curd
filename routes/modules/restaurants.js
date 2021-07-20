@@ -23,27 +23,16 @@ router.get('/:id/edit', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-    const { name, name_en, category, image, location, phone, google_map, rating, description } = req.body;
-
-    return Restaurant.create({ name, name_en, category, image, location, phone, google_map, rating, description })
+    return Restaurant.create(req.body)
         .then(() => res.redirect('/'))
         .catch(error => console.log(error))
 });
 
 router.put('/:id', (req, res) => {
     const id = req.params.id;
-    const data = req.body;
     return Restaurant.findById(id)
         .then(restaurants => {
-            restaurants.name = data.name
-            restaurants.name_en = data.name_en
-            restaurants.category = data.category
-            restaurants.image = data.image
-            restaurants.location = data.location
-            restaurants.phone = data.phone
-            restaurants.google_map = data.google_map
-            restaurants.rating = data.rating
-            restaurants.description = data.description
+            restaurants = Object.assign(restaurants, req.body);
             return restaurants.save()
         })
         .then(() => res.redirect(`/restaurants/${id}`))

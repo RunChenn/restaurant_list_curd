@@ -18,11 +18,11 @@ router.get('/', (req, res) => {
         .sort(sortDb[selected])
         .then(data => {
 
-            const restaurants = (keyword === '') ?
-                data :
-                data.filter(restaurant => (restaurant.name.toLowerCase().includes(keyword.toLowerCase()) || restaurant.category.toLowerCase().includes(keyword.toLowerCase())));
+            const restaurants = (keyword === '')
+                ? data
+                : data.filter(restaurant => (restaurant.name.toLowerCase().includes(keyword.toLowerCase()) || restaurant.category.toLowerCase().includes(keyword.toLowerCase())));
 
-            const isFindRestaurant = (data.length !== 0) ? true : false;
+            const isFindRestaurant = (data.length !== 0);
 
             res.render('index', {  restaurants, keyword, sortData, selected, isFindRestaurant })
         })
