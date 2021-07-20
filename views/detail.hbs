@@ -28,9 +28,11 @@
           <a class="btn btn-success" href="/restaurants/{{ restaurant._id }}/edit" role="button">
             <i class="fas fa-edit mr-2"></i>編&nbsp;輯
           </a>
-          <button class="btn btn-danger" data-toggle="modal" data-target="#alertModal{{ restaurant._id }}">
-            <i class="fas fa-trash-alt mr-2"></i>刪&nbsp;除
-          </button>
+          <form action="/restaurants/{{ todo._id }}?_method=DELETE" method="POST" style="display: inline;">
+            <button class="btn btn-danger" data-toggle="modal" data-target="#alertModal{{ restaurant._id }}">
+              <i class="fas fa-trash-alt mr-2"></i>刪&nbsp;除
+            </button>
+          </form>
         </div>
       </div>
       <h6 class="mb-1">

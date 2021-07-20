@@ -66,9 +66,9 @@
                         </a>
                       </div>
                       <div class="col-6 px-1">
-                          <button class="btn btn-danger btn-block" data-toggle="modal" data-target="#alertModal{{ this._id }}">
-                            <i class="fas fa-trash-alt mr-2"></i>刪&nbsp;除
-                          </button>
+                        <button class="btn btn-danger btn-block" data-toggle="modal" data-target="#alertModal{{ this._id }}">
+                          <i class="fas fa-trash-alt mr-2"></i>刪&nbsp;除
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -92,7 +92,7 @@
                   </div>
                   <div class="modal-footer border-0 text-center inline-block mx-auto">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
-                    <form action="/restaurants/{{this._id}}/delete" method="POST">
+                    <form action="/restaurants/{{this._id}}?_method=DELETE" method="POST">
                       <button type="submit" class="btn btn-success">確定</button>
                     </form>
                   </div>
