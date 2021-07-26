@@ -1,5 +1,6 @@
 # Restaurant List CRUD
 這是一個 Node.js + Express 連結資料庫並加上 CRUD 的功能，打造的搜尋餐廳清單
+![image](https://github.com/RunChenn/restaurant_list_curd/blob/main/reataurant_list_curd.png)
 
 ## Features - 產品功能
 - 首頁可以瀏覽所有餐廳與它們的簡單資料
